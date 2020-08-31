@@ -4,4 +4,10 @@ nombres = ['Violeta', 'Andino', 'Clemente','Javiera', 'Paula', 'Pía', 'Ray']
 
 nombres_total = nombres.select {|e| e.length > 5}
 
+puts "#{nombres_total}\n"
+
+# Utilizar .map para crear un arreglo con todos los nombres en minúscula.
+
+nombres_total = nombres.map {|e| e.downcase}
+
 puts nombres_total
