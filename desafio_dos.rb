@@ -16,10 +16,16 @@ puts nombres_total
 
 nombres_total = nombres.select { |e| e.include?('P') }
 
-print nombres_total
+print "#{nombres_total}\n"
 
 # Utilizando .count , contar los elementos que empiecen con 'A', 'B' o 'C'.
 
 nombres_total = nombres.count { |e| e[0] == 'A' || e[0] == 'B' || e[0] == 'C'}
 
 puts nombres_total
+
+# Utilizando .map , crear un arreglo único con la cantidad de letras que tiene cada nombre.
+
+nombres_total = nombres.map { |e| e.length }
+
+print "#{nombres_total}\n"
