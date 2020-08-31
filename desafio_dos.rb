@@ -17,3 +17,9 @@ puts nombres_total
 nombres_total = nombres.select { |e| e.include?('P') }
 
 print nombres_total
+
+# Utilizando .count , contar los elementos que empiecen con 'A', 'B' o 'C'.
+
+nombres_total = nombres.count { |e| e[0] == 'A' || e[0] == 'B' || e[0] == 'C'}
+
+puts nombres_total
